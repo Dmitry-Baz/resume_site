@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Fullstack-разработчика</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Резюме Fullstack-разработчика</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Загрузите ваше фото:</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Загрузить</button>
+        </form>
+        
+        {% if filename %}
+            <h2>Bazyk Dmitry Georgievich
+                <br>
+                <h3>Нетология. Fullstack-разработчик на Python - JS</h3>
+                <h3>Result University. Фронтенд разработчик</h3>
+            </h2>
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+        {% endif %}
+
+        <h2>Навыки</h2>
+        <ul>
+            <li>Python</li>
+            <li>Django / Flask</li>
+            <li>JavaScript</li>
+            <li>React / Vue.js</li>
+            <li>HTML/CSS</li>
+            <li>PostgreSQL / MongoDB</li>
+            <li>Git</li>
+            <li>RESTful APIs</li>
+            <li>3ds Max</li>
+            <li>Figma</li>
+        </ul>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

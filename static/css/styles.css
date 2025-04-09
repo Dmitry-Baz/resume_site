@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    max-width: 300px; /* Устанавливаем максимальную ширину изображения */
+    max-height: 300px; /* Устанавливаем максимальную высоту изображения */
+    width: 250px; /* Делаем изображение квадратным */
+    height: 250px; /* Делаем изображение квадратным */
+    border-radius: 15px; /* Закругляем края изображения */
+    object-fit: cover; /* Центрируем и обрезаем изображение, чтобы оно вписывалось */
+    margin: 20px auto; /* Центруем изображение */
+    border: 2px solid #ddd; /* Добавляем тонкую рамку */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Добавляем легкую тень */
+}
